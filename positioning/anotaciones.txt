@@ -1,0 +1,42 @@
+position: relative
+
+* Se comporta igual que el flujo de position: static, pero con la posibilidad de
+hacer un cambio de posicion despues de haberse aplicado el flujo normal.
+Vendrian siendo como ajustes que se hacen luego de que se aplica el flujo normal
+
+* Se implementa estas nuevas propiedades top, left, bottom y right
+No puedo usar top y bottom, ni left y right juntos a la vez(no puedo mover un elemento
+en la mismo eje a la vez)
+
+* El navegador usa como el punto (0,0) la esquina superior izquierda, el eje X horizontal
+y el eje Y vertical.
+
+* el overlap entre elementos depende el orden que tengan en el DOM Y si son posisionados
+* el indice z sirve para poner en diferentes layers
+* el document es el DOM y Window(ViewPort) es la porcion visible del DOM. la dimension del 
+ViewPort depende del tamaño del browser
+
+* position: relative sucede despues del flujo normal, toma la posision relativa a la posicion sobre el flujo normal
+* position: absolute sucede antes del flujo normal, toma la posicion relativa al padre
+* position: fixed sucede antes del flujo normal, toma la posicion relativa al ViewPort
+
+FIXED POSITION:
+position: fixed. todos los elementos permanecen fijos al ViewPort, este es el caso de en los headers fijos o los footers, etc ...
+
+ABSOLUTE POSITION;
+position: absolute. la unica gran diferencia con la posicion relativa es el tiempo en el que sucede. el elemnto tienen posicion relativa a su padre, antes de que todo el flujo normal ocurra.
+es un posicionamieto que debemos usar como ultimo recurso.
+
+--------
+
+text-top
+baseline
+text-bottom
+
+hay dos propiedades para alinear texto:
+text-align, para alineacion horizontal. tienen una propiedead direction (ltr y rtl)
+vertical-align, para alineacion vertical
+
+vertical-align: text-top, vertical-align: text-bottom y vertical-align: middle son opciones para alinear el texto en el padre.
+
+vertical-align:top y bottom se van a alinear con la linea

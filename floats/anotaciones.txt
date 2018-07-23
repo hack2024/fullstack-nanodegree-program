@@ -1,0 +1,40 @@
+FLOATS
+
+Los floats se usan para generar grid-based layout (grids como las de boostrap)
+floats crean un nuevo flujo en la pagina con un unico compartamiento
+
+el flujo normal para los blocks elements IGNORA los floats
+el flujo normal para los line box respeta los limites de los elementos flotantes
+
+los BLOCKS ELEMENTS IGNORA los floats
+
+Los floats estan fuera del flujo normal
+
+Los floats children no estan envueltos en el calculo del box-size del flujo 
+normal del padre.
+
+Para que se respeten los limites de los elementos hijos que tienen float, es decir
+que no se sobrelapen con otros elementos, se usa la propiedad "overflow: auto", en
+el elemento que no tiene la propiedad float.
+
+pseudo-classes se usan para darle estilo a un elemento dependiendo del estado
+pseudo-element se usan para darle estilo a una parte especfica del elemento 
+seleccionado
+
+CLEARING FLOATS
+Existe la propiedad "clear: left/right/both" para que los hermanos respeten el heith 
+de los elementos con float.
+
+Otro metodo es con un clearfix:
+
+.clearfix {
+      overflow: auto;
+    }
+
+O tambien:
+
+.clearfix:after {
+      content: '';
+      clear: both;
+      display: table;
+    }
