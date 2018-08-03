@@ -1,0 +1,13 @@
+*siempre es mejor posiciones relativas en lugar de absolutas
+*cuando se especifican widths, se deberian usar unidades relativas, para prevenir el overflow
+del viewport.
+*se deberia poner lo siguiente entre corchetes en el archivo css
+img, embed,
+object, video {
+    max-width: 100%;
+}
+*Tap Targets
+    - el tamaño de los elementos deberian ser lo suficientemente grandes para tocarlos
+    comodamente con los dedos:
+        min-width: 48px;
+        min-height: 48px;

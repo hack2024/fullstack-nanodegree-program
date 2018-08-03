@@ -1,0 +1,10 @@
+- Media Queries
+    * permite aplicar diferentes estilos a distintas resoluciones
+    * @media screen and (min-width: 500px){}
+    * un breakpoint es un punto en el cual cambia de layout la pagina
+    * lo correcto es trabajar archivos CSS para distintos breakpoints, por ejemplo:
+
+        <link rel="stylesheet" media="screen and (min-width: 550px)" href="uno.css">
+        <link rel="stylesheet" media="screen and (min-width: 700px)" href="dos.css">
+
+    * sintaxis @media screen and (css) [and/or (css)]
