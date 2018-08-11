@@ -8,3 +8,10 @@
         <link rel="stylesheet" media="screen and (min-width: 700px)" href="dos.css">
 
     * sintaxis @media screen and (css) [and/or (css)]
+
+- Flexbox
+    * display: flex;
+    * direccion por default es row
+    * flex-wrap: wrap; lo que hace es evitar que todo lo que esta en el row haga un 
+    resize, sino un wrap a la siguiente linea.
+    * order: 1; setea el orden en el que queremos ver siempre los elementos

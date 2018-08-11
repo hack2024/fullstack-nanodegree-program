@@ -1,0 +1,9 @@
+Patrones de layout
+
+- Column Drop
+- Mostly Fluid
+    * Tiene mas columnas
+    * Cuando las cosas se hacen mas anchas, en lugar de estirarse todo
+    se agregan margenes.
+- Layout Shifter
+- Off Canvas
